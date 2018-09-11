@@ -2,7 +2,7 @@
 
 Setting up environmantal variable and alias
 
-![Alt text](screenshots/bashrc file.PNG)
+![Alt text](screenshots/bashrc_file.PNG)
 
 Bash commands
 
