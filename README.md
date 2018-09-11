@@ -1,1 +1,1 @@
-# PUI2018_pmb434
+# Principles of Urban Informatics, Fall 2018
