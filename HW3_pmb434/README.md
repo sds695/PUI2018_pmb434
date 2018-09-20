@@ -1,6 +1,6 @@
 # Homework 3
 
-## Part 1:
+## Assignment 1:
 
 1. File test.csv on my repo
 
