@@ -8,8 +8,8 @@ except ImportError:
 
 
 #Check number of arguments
-if not len(sys.argv) == 3:
-    print ("Invalid number of arguments. Run as: python show_bus_locations_pmb434.py MTA_API_KEY BUS_LINE")
+if not len(sys.argv) == 4:
+    print ("Invalid number of arguments. Run as: python show_bus_locations_pmb434.py MTA_API_KEY BUS_LINE FILE_NAME.csv")
     sys.exit()
 
 
@@ -32,14 +32,21 @@ try:
 except KeyError:
 	print("Invalid Bus Line: {}".format(LineRef))
 else:
+
+	#Open file
+	fout = open(sys.argv[3], "w")
+	
 	#Print output
-	print ("Bus Line: {}".format(LineRef))
+	fout.write("Latitude,Longitude,Stop Name,Stop Status\n")
 
-	print ("Number of Active Buses: {}".format(len(buses)))
-
-	for n in range(len(buses)):
-		print("Bus {} is at latitude {} and longitude {}".format(
-			n+1,
-			buses[n]["MonitoredVehicleJourney"]["VehicleLocation"]["Latitude"],
-			buses[n]["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"]
+	for bus in buses:
+		fout.write("{},{},{},{}\n".format(
+			bus["MonitoredVehicleJourney"]["VehicleLocation"]["Latitude"],
+			bus["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"],
+			bus["MonitoredVehicleJourney"]["MonitoredCall"]["StopPointName"][0],
+			bus["MonitoredVehicleJourney"]["MonitoredCall"]["ArrivalProximityText"]
 		))
+
+	fout.close()
+
+	print("{} bus info written to {}".format(LineRef,sys.argv[3]))
