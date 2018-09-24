@@ -26,10 +26,10 @@ response = urllib.urlopen(url)
 data = response.read().decode("utf-8")
 dataDict = json.loads(data)
 
-#Get buses array
+#Check for API errors
 if "ErrorCondition" in dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0].keys():
 	#Print error from API
-	print(dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["ErrorCondition"]["Description"])
+	print("API ERROR: {}".format(dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["ErrorCondition"]["Description"]))
 else:
 	#Get buses
 	buses = dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]

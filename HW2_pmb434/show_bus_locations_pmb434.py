@@ -26,12 +26,14 @@ response = urllib.urlopen(url)
 data = response.read().decode("utf-8")
 dataDict = json.loads(data)
 
-#Get buses array
-try:
-	buses = dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]
-except KeyError:
-	print("Invalid Bus Line: {}".format(LineRef))
+#Check for API errors
+if "ErrorCondition" in dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0].keys():
+	#Print error from API
+	print("API ERROR: {}".format(dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["ErrorCondition"]["Description"]))
 else:
+	#Get buses
+	buses = dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]
+
 	#Print output
 	print ("Bus Line: {}".format(LineRef))
 
