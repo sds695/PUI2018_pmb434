@@ -27,11 +27,12 @@ data = response.read().decode("utf-8")
 dataDict = json.loads(data)
 
 #Get buses array
-try:
-	buses = dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]
-except KeyError:
-	print("Invalid Bus Line: {}".format(LineRef))
+if "ErrorCondition" in dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0].keys():
+	#Print error from API
+	print(dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["ErrorCondition"]["Description"])
 else:
+	#Get buses
+	buses = dataDict["Siri"]["ServiceDelivery"]["VehicleMonitoringDelivery"][0]["VehicleActivity"]
 
 	#Open file
 	fout = open(sys.argv[3], "w")
@@ -40,12 +41,22 @@ else:
 	fout.write("Latitude,Longitude,Stop Name,Stop Status\n")
 
 	for bus in buses:
-		fout.write("{},{},{},{}\n".format(
-			bus["MonitoredVehicleJourney"]["VehicleLocation"]["Latitude"],
-			bus["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"],
-			bus["MonitoredVehicleJourney"]["MonitoredCall"]["StopPointName"][0],
-			bus["MonitoredVehicleJourney"]["MonitoredCall"]["ArrivalProximityText"]
-		))
+
+		#Check for empty MonitoredCall
+		if bus["MonitoredVehicleJourney"]["MonitoredCall"]:
+			fout.write("{},{},{},{}\n".format(
+				bus["MonitoredVehicleJourney"]["VehicleLocation"]["Latitude"],
+				bus["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"],
+				bus["MonitoredVehicleJourney"]["MonitoredCall"]["StopPointName"][0],
+				bus["MonitoredVehicleJourney"]["MonitoredCall"]["ArrivalProximityText"]
+			))
+		else:
+			fout.write("{},{},{},{}\n".format(
+				bus["MonitoredVehicleJourney"]["VehicleLocation"]["Latitude"],
+				bus["MonitoredVehicleJourney"]["VehicleLocation"]["Longitude"],
+				"N/A",
+				"N/A"
+			))
 
 	fout.close()
 
