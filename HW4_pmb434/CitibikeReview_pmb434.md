@@ -18,4 +18,4 @@ It will help reader to understand the data better if add a comparison of the mea
 ## 3. Choose an appropriate test to test H0 given the type of data, and the question asked.
 
 
- I would suggest using z-test to test H0 given the type of data are the means of two populations, with large (n ≥ 30) samples. You can use New Yorker's mean and standard deviation to test how many standard deviations away is the tourists' mean. 
+I would suggest using z-test to test H0 given the type of data are the means of two populations, with large (n ≥ 30) samples. You can use New Yorker's mean and standard deviation to test how many standard deviations away is the tourists' mean. 
