@@ -2,7 +2,7 @@
 ## 1. Verify the Null and alternative hypotheses
 
 
-I think it is an interesting idea to test tourists' trips time against New Yorkers's trips time on CitiBikes, by guessing that tourists should have longer trips time because they are visiting and exploring the city. It is also reasonable to use the average duration of trips as the measurements. The Null and alternative hypotheses are formulated correctly in both words and formula.
+I think it is an interesting idea to test tourists' trips time against New Yorkers's trips time on CitiBikes, by guessing that tourists should have longer trips because they are visiting and exploring the city. It is also reasonable to use the average duration of trips as the measurements. The Null and alternative hypotheses are formulated correctly in both words and formula.
 
 ## 2. Verify that the data support the project:
 
