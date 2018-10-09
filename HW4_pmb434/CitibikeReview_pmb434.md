@@ -10,7 +10,7 @@ The data was properly pre-processed by removing all the unrelated values and lea
 
 Other than that, I think it would also be helpful to extract the means for the two groups separately (the average duration time of New Yorkers and the average duration time of tourists),  so you can compare them together to see which group have a longer trip time and how far are they from the total mean.  
 
-For the plotting, while it makes sense to plot the density against trip durations to show what duration is the most common for each group, it will be more helpful if adding a comparison of the two group's trip duation means. For example, you can calculate the weekly trip duation means for each group,  and then in a histogram plot the two means next to each other for each week. It is a more straightforward way to show which group has a longer average duration. 
+For the plotting, while it makes sense to plot the density against trip durations to show what duration is the most common for each group, it will be more helpful if adding a comparison of the two group's duation means. For example, you can calculate the weekly duation mean for each group, and then in a histogram plot the two means next to each other for every week. It is a more straightforward way to show which group has a longer average duration in the month. 
 
 
 ## 3. Choose an appropriate test to test H0 given the type of data, and the question asked.
