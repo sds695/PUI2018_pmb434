@@ -8,11 +8,16 @@ ANOVA	| 1: level of supervision, 2: prescence of others, 3: prescence of a "conf
 Path Analysis	| 1: women age, 2: residence, 3: religion, 4: socioeconomic status, 5: use of FP methods, 6: women education, 7: age at marriage | 1: ordinal, 2: categorical, 3: categorical, 4: ordinal, 5: categorical, 6: ordinal, 7: ordinal | 1, unwanted birth | continuous numerical | none | none | Determine the direct, indirect and total effects of socio-demographic factors on unwanted births | direct, indirect and total effect (coefficients) for each IV = 0 | 0.05 | [Correlates of Unwanted Births in Bangladesh: A Study through Path Analysis](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0164007) |
 | Logistic Regression |1, tobacco smoke exposure measured by serum cotinine concentration|ordinal|1, vitamin D deficiency|dichotomous|1: age, 2: sex, 3: race, 4: BMI, 5: maternal education, 6: family socio-economic status|1: ordinal, 2: categorical, 3: categorical, 4: ordinal, 5: ordinal, 6: ordinal| Does tobacco smoke exposure increase the prevalence of vitamin D deficiency in US children? |Effect of tobacco smoke exposure (coefficient) = 0|0.05|[Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0205342)|
 
+**Plot from "Peer Effects in Unethical Behavior: Standing or Reputation?"**
 
-**Plot from "Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children"**
+![Peer Effects in Unethical Behavior: Standing or Reputation?](plots/anova_1.PNG)
 
-![Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children](plots/logistic.PNG)
+![Peer Effects in Unethical Behavior: Standing or Reputation?](plots/anova_2.PNG)
 
 **Plot from "Correlates of Unwanted Births in Bangladesh: A Study through Path Analysis"**
 
 ![Correlates of Unwanted Births in Bangladesh: A Study through Path Analysis](plots/path_analysis.PNG)
+
+**Plot from "Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children"**
+
+![Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children](plots/logistic.PNG)
