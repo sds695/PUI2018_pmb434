@@ -34,6 +34,10 @@ Path Analysis	| 1: women age, 2: residence, 3: religion, 4: socioeconomic status
 
 For this assignment we had to reproduce the analysis of the Hard to Employ program in New York, performing a Z-test and a Chi Square test.
 
+[Link to assignment 3](HW5_3_pmb434.ipynb)
+
 ## Assignment 4
 
 For this assignment we had to first classify Citibike trips into day or night, and then do 3 tests of correlation between them: KS test, Pearson test, and Spearnman test.
+
+[Link to assignment 4](HW5_4_pmb434.ipynb)
