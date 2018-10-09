@@ -1,6 +1,14 @@
-### Assignment 3
+# Homework 5 - Pablo Mandiola
 
-For this assignment I worked with Samuel Hight.
+## Assignment 1
+
+For this assignment we had to review a classmate's Citibike assignment from last week.
+
+## Assignment 2
+
+For this assignment I worked with Samuel Hight. He took the lead with the ANOVA test, I took it with the Logistic Regression, and we built the Logistic Regression one together.
+
+The assignment was to analyze 3 papers that did different type of statistical tests, and fill the following table:
 
 | **Statistical Analyses**	|  **IV(s)**  |  **IV type(s)** |  **DV(s)**  |  **DV type(s)**  |  **Control Var** | **Control Var type**  | **Question to be answered** | **_H0_** | **alpha** | **link to paper**| 
 |:----------:|:----------|:------------|:-------------|:-------------|:------------|:------------- |:------------------|:----:|:-------:|:-------|
@@ -21,3 +29,7 @@ Path Analysis	| 1: women age, 2: residence, 3: religion, 4: socioeconomic status
 **Plot from "Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children"**
 
 ![Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children](plots/logistic.PNG)
+
+## Assignment 3
+
+For this assignment we had to reproduce
