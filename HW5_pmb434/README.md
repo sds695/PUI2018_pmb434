@@ -6,7 +6,7 @@ For this assignment we had to peer review a classmate's Citibike assignment from
 
 ## Assignment 2
 
-For this assignment I worked with Samuel Hight. He took the lead with the ANOVA test, I took it with the Logistic Regression, and we built the Logistic Regression one together.
+For this assignment I worked with Samuel Hight. We analyzed the same papers independently and then discussed together how to interpret specific parts.
 
 The assignment was to analyze 3 papers that did different type of statistical tests, and fill the following table:
 
@@ -32,4 +32,8 @@ Path Analysis	| 1: women age, 2: residence, 3: religion, 4: socioeconomic status
 
 ## Assignment 3
 
-For this assignment we had to reproduce
+For this assignment we had to reproduce the analysis of the Hard to Employ program in New York, performing a Z-test and a Chi Square test.
+
+## Assignment 4
+
+For this assignment we had to first classify Citibike trips into day or night, and then do 3 tests of correlation between them: KS test, Pearson test, and Spearnman test.
