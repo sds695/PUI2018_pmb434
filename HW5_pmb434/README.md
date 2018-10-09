@@ -2,7 +2,7 @@
 
 ## Assignment 1
 
-For this assignment we had to review a classmate's Citibike assignment from last week.
+For this assignment we had to peer review a classmate's Citibike assignment from last week. My assigned classmate was Jiawen Wan, and the submitted review is located in her [PUI Github repository here](https://github.com/rylanwan/PUI2018_jw3290/tree/master/HW4_jw3290).
 
 ## Assignment 2
 
