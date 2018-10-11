@@ -1,6 +1,14 @@
-### Assignment 3
+# PUI Homework 5 - Pablo Mandiola (pmb434)
 
-For this assignment I worked with Samuel Hight.
+## Assignment 1
+
+For this assignment we had to peer review a classmate's Citibike assignment from last week. My assigned classmate was Jiawen Wan, and the submitted review is located in her [PUI Github repository here](https://github.com/rylanwan/PUI2018_jw3290/tree/master/HW4_jw3290).
+
+## Assignment 2
+
+For this assignment I worked with Samuel Hight. We analyzed the same papers independently and then discussed together how to interpret specific parts.
+
+The assignment was to analyze 3 papers that did different type of statistical tests, and fill the following table:
 
 | **Statistical Analyses**	|  **IV(s)**  |  **IV type(s)** |  **DV(s)**  |  **DV type(s)**  |  **Control Var** | **Control Var type**  | **Question to be answered** | **_H0_** | **alpha** | **link to paper**| 
 |:----------:|:----------|:------------|:-------------|:-------------|:------------|:------------- |:------------------|:----:|:-------:|:-------|
@@ -21,3 +29,15 @@ Path Analysis	| 1: women age, 2: residence, 3: religion, 4: socioeconomic status
 **Plot from "Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children"**
 
 ![Tobacco smoke exposure is an independent predictor of vitamin D deficiency in US children](plots/logistic.PNG)
+
+## Assignment 3
+
+For this assignment we had to reproduce the analysis of the Hard to Employ program in New York, performing a Z-test and a Chi Square test.
+
+[Link to assignment 3](HW5_3_pmb434.ipynb)
+
+## Assignment 4
+
+For this assignment we had to first classify Citibike trips into day or night, and then do 3 tests of correlation between them: KS test, Pearson test, and Spearnman test.
+
+[Link to assignment 4](HW5_4_pmb434.ipynb)
