@@ -12,6 +12,6 @@ For this assignment I made a plot of Population Density in Santiago (Chile) by C
 
 For this assignment I had to finish the Citi Bike analysis from Homework 4, perform a statistical test for my research question, and write a report on Authorea describin the analysis and results.
 
-[Link to Authorea Report](HW8_2_pmb434.ipynb)
+[Link to Authorea Report](https://www.authorea.com/335936/UzMjrZU0T0ZaM4_BkzLXEw)
 
 [Link to Jupyter Notebook](HW8_2_pmb434.ipynb)
