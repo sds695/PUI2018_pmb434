@@ -6,7 +6,7 @@ For this assignment I made a plot of Population Density in Santiago (Chile) by C
 
 ![Population Density in Santiago](Santiago_density_by_Block.png)
 
-The Jupyter Notebook was built to plot any city in Chile. However, for replication purposes I had to adjust it because CUSP ADRF doesn't have unrar installed, so it just works for Santiago as is. Based on the work in https://github.com/carnby/mapas_censo_2017 to understand the handling of Chilean census data and shapefiles.
+The Jupyter Notebook was built to plot any city in Chile. However, for replication purposes I had to adjust it because CUSP ADRF doesn't have unrar installed, so it just works for Santiago as is. Based on the work by Eduardo Graells-Garrido in https://github.com/carnby/mapas_censo_2017 to understand the handling of Chilean census data and shapefiles.
 
 [Link to Jupyter Notebook](HW8_1_pmb434.ipynb)
 
